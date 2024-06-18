@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ask.chanakya</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    img {
+      display: block;
+      height: 100vh;
+      margin: 0 auto;
+    }
+    .container {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+    }
+    .access {
+      position: absolute;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      color: #FFE501;
+      font-family: Arial, Helvetica, sans-serif;
+      /* border: 1px solid red; */
+    }
+    .access a {
+      text-decoration: none;
+      color: #FFE501;
+    }
+    .header {
+      top: 0;
+      margin-top: 1%;
+    }
+    .early-access {
+      bottom: 0;
+      margin-bottom: 7%;
+    }
+    .item {
+      width: fit-content;
+      margin: 0 auto;
+      font-size: 4vh;
+    }
+    .item0 {
+      visibility: hidden;
+    }
+    .item1 {
+      visibility: hidden;
+    }
+    .item2 {
+      background: -webkit-radial-gradient(
+        circle,
+        rgb(235, 220, 9) 0%,
+        rgb(233, 240, 27) 21%,
+        rgb(127, 232, 28) 51%,
+        rgba(0, 255, 113, 1) 100%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      background-size: 200% 100%;
+      /* background-position: 0%; */
+      /* background-position: 100%; */
+      animation: background-slide 1.5s infinite;
+    }
+
+    @keyframes background-slide {
+      0% {
+        background-position: 0%;
+      }
+      50% {
+        background-position: 100%;
+      }
+      100% {
+        background-position: 0%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- <h1>ask.chanakya</h1> -->
+  <div class="container">
+    <img src="./gaudmire.png" alt="ask.chanakya">
+    <div class="access header">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5fqYmQ6xZy0iWA8T5IGgDjbar1M6dMrl-p26AvpOXrQtUpQ/viewform?usp=sf_link" target="_blank">
+        <h1 class="item item0">ask.chanakya</h1>
+      </a>
+    </div>
+    <div class="access early-access">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5fqYmQ6xZy0iWA8T5IGgDjbar1M6dMrl-p26AvpOXrQtUpQ/viewform?usp=sf_link" target="_blank">
+        <h1 class="item item1">https://ask.chanakya.com</h1>
+      </a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5fqYmQ6xZy0iWA8T5IGgDjbar1M6dMrl-p26AvpOXrQtUpQ/viewform?usp=sf_link" target="_blank">
+        <h1 class="item item2">get early access</h1>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
